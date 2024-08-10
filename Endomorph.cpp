@@ -44,23 +44,25 @@ std::cout << "Endomorph" << std::endl;
 
 }
 void Endomorph::exercises() {
- std::cout << "Mesomorph" << std::endl;
-    std::cout << "Mesomorphs have a naturally athletic build and can gain muscle and strength easily." << std::endl;
-    std::cout << "Their exercise routine focuses on maintaining muscle mass and reducing body fat." << std::endl;
+ std::cout << "Endomorph" << std::endl;
+    std::cout << "Endomorphs generally have a higher body fat percentage and may struggle with weight management." << std::endl;
+    std::cout << "Their exercise routines focus on fat loss and muscle maintenance." << std::endl;
 
     std::cout << "Strength Training:" << std::endl;
     std::cout << "1. Bench Press: Essential for upper body strength." << std::endl;
     std::cout << "2. Squats: Builds lower body strength and power." << std::endl;
     std::cout << "3. Deadlifts: Overall body strength and muscle growth." << std::endl;
-    std::cout << "4. Overhead Press: Strengthens shoulders and upper body." << std::endl;
-    std::cout << "5. Pull-Ups/Chin-Ups: Effective for back and biceps." << std::endl;
-    std::cout << "6. Dumbbell Rows: Builds back strength and muscle definition." << std::endl;
-    std::cout << "7. Leg Curls: Targets the hamstrings." << std::endl;
+    std::cout << "4. Lat Pulldowns: Targets the back muscles." << std::endl;
+    std::cout << "5. Leg Press: Strengthens the lower body." << std::endl;
+    std::cout << "6. Dumbbell Press: Versatile for upper body workouts." << std::endl;
+    std::cout << "7. Kettlebell Swings: Full-body exercise that also boosts cardio." << std::endl;
 
     std::cout << "Cardio:" << std::endl;
-    std::cout << "1. High-Intensity Interval Training (HIIT): Effective for burning fat and maintaining muscle." << std::endl;
-    std::cout << "2. Running: Improves cardiovascular health and endurance." << std::endl;
-    std::cout << "3. Jump Rope: Great for quick cardio sessions and coordination." << std::endl;    
+    std::cout << "1. Walking/Jogging: Easy to start and effective for weight loss." << std::endl;
+    std::cout << "2. Cycling: Low-impact and great for burning calories." << std::endl;
+    std::cout << "3. Swimming: Full-body workout that is gentle on joints." << std::endl;
+    std::cout << "4. Elliptical Trainer: Effective for cardiovascular health and fat loss." <<std::endl;
+    std::cout << "5. Rowing Machine: Full-body exercise that burns calories." <<std::endl;
 }
 
 void Endomorph::showExerciseDetails(const std::string &exerciseName) const {
