@@ -66,132 +66,167 @@ void Endomorph::exercises() {
 }
 
 void Endomorph::showExerciseDetails(const std::string &exerciseName) const {
-	if (exerciseName == "Bench Press") {
-    std::cout << "Exercise: Bench Press\n";
-    std::cout << "Description: Essential for upper body strength.\n";
-    std::cout << "Muscles Worked: Chest, Shoulders, Triceps\n";
-    std::cout << "Equipment: Barbell\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Lie on a bench with your feet flat on the floor.\n";
-    std::cout << "Grasp the barbell with hands slightly wider than shoulder-width apart.\n";
-    std::cout << "Lower the barbell to your chest, then press it back up to the starting position.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 8-10 reps\n";
-    std::cout << "Intermediate: 4 sets of 6-8 reps\n";
-    std::cout << "Advanced: 5 sets of 5 reps\n";
-} else if (exerciseName == "Squats") {
-    std::cout << "Exercise: Squats\n";
-    std::cout << "Description: Builds lower body strength and power.\n";
-    std::cout << "Muscles Worked: Quadriceps, Hamstrings, Glutes\n";
-    std::cout << "Equipment: Barbell\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Stand with feet shoulder-width apart, barbell resting on your upper back.\n";
-    std::cout << "Lower your body by bending your knees and hips, keeping your back straight.\n";
-    std::cout << "Descend until your thighs are parallel to the ground.\n";
-    std::cout << "Push through your heels to return to the starting position.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 10-12 reps\n";
-    std::cout << "Intermediate: 4 sets of 8-10 reps\n";
-    std::cout << "Advanced: 5 sets of 6-8 reps\n";
-} else if (exerciseName == "Deadlifts") {
-    std::cout << "Exercise: Deadlifts\n";
-    std::cout << "Description: Overall body strength and muscle growth.\n";
-    std::cout << "Muscles Worked: Back, Legs, Core\n";
-    std::cout << "Equipment: Barbell\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Stand with your feet hip-width apart, barbell in front.\n";
-    std::cout << "Bend at your hips and knees to lower your body and grasp the barbell with an overhand grip.\n";
-    std::cout << "Lift the barbell by extending your hips and knees to full extension.\n";
-    std::cout << "Lower the barbell back to the ground in a controlled manner.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 8-10 reps\n";
-    std::cout << "Intermediate: 4 sets of 6-8 reps\n";
-    std::cout << "Advanced: 5 sets of 5 reps\n";
-}
-else if (exerciseName == "Overhead Press") {
-    std::cout << "Exercise: Overhead Press\n";
-    std::cout << "Description: Strengthens shoulders and upper body.\n";
-    std::cout << "Muscles Worked: Shoulders, Triceps\n";
-    std::cout << "Equipment: Barbell or Dumbbells\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Stand with feet shoulder-width apart, holding the barbell or dumbbells at shoulder height.\n";
-    std::cout << "Press the weight overhead until your arms are fully extended.\n";
-    std::cout << "Lower the weight back to shoulder height.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 10-12 reps\n";
-    std::cout << "Intermediate: 4 sets of 8-10 reps\n";
-    std::cout << "Advanced: 5 sets of 6-8 reps\n";
-} else if (exerciseName == "Pull-Ups/Chin-Ups") {
-    std::cout << "Exercise: Pull-Ups/Chin-Ups\n";
-    std::cout << "Description: Effective for back and biceps.\n";
-    std::cout << "Muscles Worked: Back, Biceps\n";
-    std::cout << "Equipment: Pull-Up Bar\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Grasp the pull-up bar with an overhand grip for pull-ups or underhand grip for chin-ups.\n";
-    std::cout << "Pull your body up until your chin is above the bar.\n";
-    std::cout << "Lower your body back to the starting position in a controlled manner.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 4-6 reps\n";
-    std::cout << "Intermediate: 4 sets of 6-8 reps\n";
-    std::cout << "Advanced: 5 sets of 8-10 reps\n";
-} else if (exerciseName == "Dumbbell Rows") {
-    std::cout << "Exercise: Dumbbell Rows\n";
-    std::cout << "Description: Builds back strength and muscle definition.\n";
-    std::cout << "Muscles Worked: Back, Biceps\n";
-    std::cout << "Equipment: Dumbbells\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Place one knee and one hand on a bench for support, holding a dumbbell in the opposite hand.\n";
-    std::cout << "Pull the dumbbell towards your hip while squeezing your shoulder blade.\n";
-    std::cout << "Lower the dumbbell back to the starting position.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 10-12 reps\n";
-    std::cout << "Intermediate: 4 sets of 8-10 reps\n";
-    std::cout << "Advanced: 5 sets of 6-8 reps\n";
-} else if (exerciseName == "Leg Curls") {
-    std::cout << "Exercise: Leg Curls\n";
-    std::cout << "Description: Targets the hamstrings.\n";
-    std::cout << "Muscles Worked: Hamstrings\n";
-    std::cout << "Equipment: Leg Curl Machine\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Sit on the leg curl machine with your legs positioned under the pad.\n";
-    std::cout << "Curl your legs towards your glutes.\n";
-    std::cout << "Slowly lower your legs back to the starting position.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 3 sets of 12-15 reps\n";
-    std::cout << "Intermediate: 4 sets of 10-12 reps\n";
-    std::cout << "Advanced: 5 sets of 8-10 reps\n";
-}
-else if (exerciseName == "High-Intensity Interval Training (HIIT)") {
-    std::cout << "Workout: High-Intensity Interval Training (HIIT)\n";
-    std::cout << "Description: Effective for burning fat and maintaining muscle.\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Alternate between short bursts of intense exercise and periods of rest or low-intensity exercise.\n";
-    std::cout << "Example: 30 seconds of sprinting followed by 30 seconds of walking.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 15-20 minutes, 3 times a week\n";
-    std::cout << "Intermediate: 20-30 minutes, 4 times a week\n";
-    std::cout << "Advanced: 30-40 minutes, 5 times a week\n";
-} else if (exerciseName == "Running") {
-    std::cout << "Workout: Running\n";
-    std::cout << "Description: Improves cardiovascular health and endurance.\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Run at a steady pace, focusing on maintaining good form.\n";
-    std::cout << "Increase duration and intensity gradually.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 20-30 minutes, 3 times a week\n";
-    std::cout << "Intermediate: 30-40 minutes, 4 times a week\n";
-    std::cout << "Advanced: 40-60 minutes, 5 times a week\n";
-} else if (exerciseName == "Jump Rope") {
-    std::cout << "Workout: Jump Rope\n";
-    std::cout << "Description: Great for quick cardio sessions and coordination.\n";
-    std::cout << "Procedure:\n";
-    std::cout << "Jump rope at a steady pace, keeping your jumps small and quick.\n";
-    std::cout << "Focus on timing and rhythm.\n";
-    std::cout << "Repetitions:\n";
-    std::cout << "Beginner: 5 minutes, 3 times a week\n";
-    std::cout << "Intermediate: 10 minutes, 4 times a week\n";
-    std::cout << "Advanced: 15 minutes, 5 times a week\n";
-}
+    if (exerciseName == "Bench Press") {
+        std::cout << "Exercise: Bench Press\n";
+        std::cout << "Description: Essential for upper body strength.\n";
+        std::cout << "Muscles Worked: Chest, Shoulders, Triceps\n";
+        std::cout << "Equipment: Barbell\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Lie on a bench with your feet flat on the floor.\n";
+        std::cout << "Grasp the barbell with hands slightly wider than shoulder-width apart.\n";
+        std::cout << "Lower the barbell to your chest, then press it back up to the starting position.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 8-10 reps\n";
+        std::cout << "Intermediate: 4 sets of 6-8 reps\n";
+        std::cout << "Advanced: 5 sets of 5 reps\n";
+    } else if (exerciseName == "Squats") {
+        std::cout << "Exercise: Squats\n";
+        std::cout << "Description: Builds lower body strength and power.\n";
+        std::cout << "Muscles Worked: Quadriceps, Hamstrings, Glutes\n";
+        std::cout << "Equipment: Barbell\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Stand with feet shoulder-width apart, barbell resting on your upper back.\n";
+        std::cout << "Lower your body by bending your knees and hips, keeping your back straight.\n";
+        std::cout << "Descend until your thighs are parallel to the ground.\n";
+        std::cout << "Push through your heels to return to the starting position.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 10-12 reps\n";
+        std::cout << "Intermediate: 4 sets of 8-10 reps\n";
+        std::cout << "Advanced: 5 sets of 6-8 reps\n";
+    } else if (exerciseName == "Deadlifts") {
+        std::cout << "Exercise: Deadlifts\n";
+        std::cout << "Description: Builds overall body strength and muscle mass.\n";
+        std::cout << "Muscles Worked: Back, Glutes, Hamstrings\n";
+        std::cout << "Equipment: Barbell\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Stand with feet hip-width apart, barbell in front of you.\n";
+        std::cout << "Bend at the hips and knees to grip the barbell with both hands.\n";
+        std::cout << "Lift the bar by straightening your back and legs, keeping the bar close to your body.\n";
+        std::cout << "Lower the bar back to the ground with control.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 6-8 reps\n";
+        std::cout << "Intermediate: 4 sets of 5-7 reps\n";
+        std::cout << "Advanced: 5 sets of 4-6 reps\n";
+    } else if (exerciseName == "Lat Pulldowns") {
+        std::cout << "Exercise: Lat Pulldowns\n";
+        std::cout << "Description: Targets the back muscles.\n";
+        std::cout << "Muscles Worked: Latissimus Dorsi, Biceps\n";
+        std::cout << "Equipment: Lat Pulldown Machine\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Sit at the lat pulldown machine and grasp the bar with a wide grip.\n";
+        std::cout << "Pull the bar down towards your chest, squeezing your shoulder blades together.\n";
+        std::cout << "Slowly return the bar to the starting position.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 10-12 reps\n";
+        std::cout << "Intermediate: 4 sets of 8-10 reps\n";
+        std::cout << "Advanced: 5 sets of 6-8 reps\n";
+    } else if (exerciseName == "Leg Press") {
+        std::cout << "Exercise: Leg Press\n";
+        std::cout << "Description: Strengthens the lower body.\n";
+        std::cout << "Muscles Worked: Quadriceps, Hamstrings, Glutes\n";
+        std::cout << "Equipment: Leg Press Machine\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Sit in the leg press machine with feet shoulder-width apart on the platform.\n";
+        std::cout << "Push the platform away from you by extending your legs, without locking your knees.\n";
+        std::cout << "Slowly return to the starting position.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 10-12 reps\n";
+        std::cout << "Intermediate: 4 sets of 8-10 reps\n";
+        std::cout << "Advanced: 5 sets of 6-8 reps\n";
+    } else if (exerciseName == "Dumbbell Press") {
+        std::cout << "Exercise: Dumbbell Press\n";
+        std::cout << "Description: Versatile for upper body workouts.\n";
+        std::cout << "Muscles Worked: Chest, Shoulders, Triceps\n";
+        std::cout << "Equipment: Dumbbells\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Lie on a bench with a dumbbell in each hand, arms extended above your chest.\n";
+        std::cout << "Lower the dumbbells to the sides of your chest, keeping elbows slightly bent.\n";
+        std::cout << "Press the dumbbells back up to the starting position.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 8-10 reps\n";
+        std::cout << "Intermediate: 4 sets of 6-8 reps\n";
+        std::cout << "Advanced: 5 sets of 5 reps\n";
+    } else if (exerciseName == "Kettlebell Swings") {
+        std::cout << "Exercise: Kettlebell Swings\n";
+        std::cout << "Description: Full-body exercise that also boosts cardio.\n";
+        std::cout << "Muscles Worked: Glutes, Hamstrings, Shoulders\n";
+        std::cout << "Equipment: Kettlebell\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Stand with feet shoulder-width apart, holding the kettlebell with both hands.\n";
+        std::cout << "Bend your knees slightly and swing the kettlebell between your legs.\n";
+        std::cout << "Explosively drive your hips forward to swing the kettlebell up to shoulder height.\n";
+        std::cout << "Control the descent of the kettlebell back between your legs and repeat.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 3 sets of 15 reps\n";
+        std::cout << "Intermediate: 4 sets of 12 reps\n";
+        std::cout << "Advanced: 5 sets of 10 reps\n";
+    } else if (exerciseName == "Walking/Jogging") {
+        std::cout << "Exercise: Walking/Jogging\n";
+        std::cout << "Description: Easy to start and effective for weight loss.\n";
+        std::cout << "Muscles Worked: Legs, Core\n";
+        std::cout << "Equipment: None\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Begin with a warm-up walk for 5-10 minutes.\n";
+        std::cout << "Gradually increase your pace to a brisk walk or light jog.\n";
+        std::cout << "Maintain the pace for the desired time, then cool down with a slower walk.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 20-30 minutes\n";
+        std::cout << "Intermediate: 30-45 minutes\n";
+        std::cout << "Advanced: 45-60 minutes\n";
+    } else if (exerciseName == "Cycling") {
+        std::cout << "Exercise: Cycling\n";
+        std::cout << "Description: Low-impact and great for burning calories.\n";
+        std::cout << "Muscles Worked: Legs, Glutes, Core\n";
+        std::cout << "Equipment: Bicycle\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Start with a 5-10 minute warm-up at a low resistance.\n";
+        std::cout << "Gradually increase your speed or resistance.\n";
+        std::cout << "Cycle at a steady pace for the desired time, then cool down at a low resistance.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 20-30 minutes\n";
+        std::cout << "Intermediate: 30-45 minutes\n";
+        std::cout << "Advanced: 45-60 minutes\n";
+    } else if (exerciseName == "Swimming") {
+        std::cout << "Exercise: Swimming\n";
+        std::cout << "Description: Full-body workout that is gentle on joints.\n";
+        std::cout << "Muscles Worked: Full Body\n";
+        std::cout << "Equipment: Pool\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Warm up with a few easy laps.\n";
+        std::cout << "Increase your speed and distance based on your fitness level.\n";
+        std::cout << "Incorporate different strokes to target various muscle groups.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 20-30 minutes\n";
+        std::cout << "Intermediate: 30-45 minutes\n";
+        std::cout << "Advanced: 45-60 minutes\n";
+    } else if (exerciseName == "Elliptical Trainer") {
+        std::cout << "Exercise: Elliptical Trainer\n";
+        std::cout << "Description: Effective for cardiovascular health and fat loss.\n";
+        std::cout << "Muscles Worked: Legs, Core, Arms\n";
+        std::cout << "Equipment: Elliptical Trainer\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Start with a warm-up at a low resistance.\n";
+        std::cout << "Increase the resistance and speed to a moderate level.\n";
+        std::cout << "Maintain the pace for the desired time, then cool down at a low resistance.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 20-30 minutes\n";
+        std::cout << "Intermediate: 30-45 minutes\n";
+        std::cout << "Advanced: 45-60 minutes\n";
+    } else if (exerciseName == "Rowing Machine") {
+        std::cout << "Exercise: Rowing Machine\n";
+        std::cout << "Description: Full-body exercise that burns calories.\n";
+        std::cout << "Muscles Worked: Back, Legs, Core\n";
+        std::cout << "Equipment: Rowing Machine\n";
+        std::cout << "Procedure:\n";
+        std::cout << "Start with a 5-minute warm-up at a low resistance.\n";
+        std::cout << "Increase the resistance and row at a steady pace.\n";
+        std::cout << "Maintain good posture, driving through your legs and pulling with your arms.\n";
+        std::cout << "Cool down with a few minutes of easy rowing.\n";
+        std::cout << "Repetitions:\n";
+        std::cout << "Beginner: 20 minutes\n";
+        std::cout << "Intermediate: 30 minutes\n";
+        std::cout << "Advanced: 45 minutes\n";
+    }
 else {
 	std::cout<<"please write the name of the exercise from the showing list\n\n";
 }
