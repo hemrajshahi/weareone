@@ -460,36 +460,36 @@ void MainWindow::on_Ectoshowexercise_clicked()
                           "Beginner: 3 sets of 8-10 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/deadlifts.jpg";
+        imagePath = ":/images/deadlift.jpg";
     }
-        else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Biceps Curl\n"
-                              "Description: Strengthens the biceps, improves arm definition.\n"
-                              "Muscles Worked: Biceps\n"
-                              "Equipment: Dumbbells, Barbell\n\n"
-                              "Procedure:\n"
-                              "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
-                              "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
-                              "Slowly lower the weights back to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/biceps_curl.jpg";  // Ensure this path is correct
-        } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Pulley Push-down\n"
-                              "Description: Targets the triceps, improving upper arm strength.\n"
-                              "Muscles Worked: Triceps\n"
-                              "Equipment: Cable Machine\n\n"
-                              "Procedure:\n"
-                              "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
-                              "Grasp the bar with an overhand grip, elbows close to your sides.\n"
-                              "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/pulley_push_down.jpg";  // Ensure this path is correct
+    else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Biceps Curl\n"
+                          "Description: Strengthens the biceps, improves arm definition.\n"
+                          "Muscles Worked: Biceps\n"
+                          "Equipment: Dumbbells, Barbell\n\n"
+                          "Procedure:\n"
+                          "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
+                          "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
+                          "Slowly lower the weights back to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/barbellcurl.jpg";  // Ensure this path is correct
+    } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Pulley Push-down\n"
+                          "Description: Targets the triceps, improving upper arm strength.\n"
+                          "Muscles Worked: Triceps\n"
+                          "Equipment: Cable Machine\n\n"
+                          "Procedure:\n"
+                          "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
+                          "Grasp the bar with an overhand grip, elbows close to your sides.\n"
+                          "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/pulleypushdown.jpg";  // Ensure this path is correct
 
     } else if (exerciseName.compare("Bench Press", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Bench Press\n"
@@ -504,7 +504,7 @@ void MainWindow::on_Ectoshowexercise_clicked()
                           "Beginner: 3 sets of 8-10 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/bench_press.jpg";
+        imagePath = ":/images/benchpress.jpg";
     } else if (exerciseName.compare("Pull-Ups/Chin-Ups", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Pull-Ups/Chin-Ups\n"
                           "Description: Effective for back and biceps development.\n"
@@ -518,7 +518,7 @@ void MainWindow::on_Ectoshowexercise_clicked()
                           "Beginner: 3 sets of 4-6 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 8-10 reps\n";
-        imagePath = ":/images/pull_ups.jpg";
+        imagePath = ":/images/chinup.jpg";
     } else if (exerciseName.compare("Shoulder Press", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Shoulder Press\n"
                           "Description: Builds shoulder and upper body strength.\n"
@@ -532,36 +532,7 @@ void MainWindow::on_Ectoshowexercise_clicked()
                           "Beginner: 3 sets of 10-12 reps\n"
                           "Intermediate: 4 sets of 8-10 reps\n"
                           "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/shoulder_press.jpg";
-    } else if (exerciseName.compare("Barbell Rows", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Barbell Rows\n"
-                          "Description: Targets the back muscles and helps in gaining upper body strength.\n"
-                          "Muscles Worked: Back, Biceps\n"
-                          "Equipment: Barbell\n\n"
-                          "Procedure:\n"
-                          "Stand with feet shoulder-width apart, holding the barbell with an overhand grip.\n"
-                          "Bend at the hips and knees, keeping your back straight.\n"
-                          "Pull the barbell towards your abdomen, squeezing your shoulder blades together.\n"
-                          "Lower the barbell back to the starting position.\n\n"
-                          "Repetitions:\n"
-                          "Beginner: 3 sets of 10-12 reps\n"
-                          "Intermediate: 4 sets of 8-10 reps\n"
-                          "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/barbell_rows.jpg";
-    } else if (exerciseName.compare("Leg Press", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Leg Press\n"
-                          "Description: Complements squats for lower body strength.\n"
-                          "Muscles Worked: Quadriceps, Hamstrings, Glutes\n"
-                          "Equipment: Leg Press Machine\n\n"
-                          "Procedure:\n"
-                          "Sit on the leg press machine with feet shoulder-width apart on the platform.\n"
-                          "Push the platform away by extending your legs.\n"
-                          "Slowly bend your knees to return to the starting position.\n\n"
-                          "Repetitions:\n"
-                          "Beginner: 3 sets of 12-15 reps\n"
-                          "Intermediate: 4 sets of 10-12 reps\n"
-                          "Advanced: 5 sets of 8-10 reps\n";
-        imagePath = ":/images/leg_press.jpg";
+        imagePath = ":/images/shoulderpress.jpg";
     } else if (exerciseName.compare("Rowing Machine", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Rowing Machine\n"
                           "Description: Full-body workout that also builds endurance.\n\n"
@@ -574,7 +545,7 @@ void MainWindow::on_Ectoshowexercise_clicked()
                           "Beginner: 20-30 minutes, 3 times a week\n"
                           "Intermediate: 30-40 minutes, 4 times a week\n"
                           "Advanced: 40-60 minutes, 5 times a week\n";
-        imagePath = ":/images/rowing_machine.jpg";
+        imagePath = ":/images/Rowingmachine.jpg";
     } else if (exerciseName.compare("Cycling", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Cycling\n"
                           "Description: Low impact and good for cardiovascular health.\n\n"
@@ -605,6 +576,7 @@ void MainWindow::on_Ectoshowexercise_clicked()
     }
 
     // Display the exercise details
+    ui->exerciseDetailsLabel->setWordWrap(true);
     ui->exerciseDetailsLabel->setText(exerciseDetails);
 
     // Load and display the image
@@ -639,39 +611,39 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Beginner: 3 sets of 8-10 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/deadlifts.jpg";
+        imagePath = ":/images/deadlift.jpg";
 
     }  else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Biceps Curl\n"
-                              "Description: Strengthens the biceps, improves arm definition.\n"
-                              "Muscles Worked: Biceps\n"
-                              "Equipment: Dumbbells, Barbell\n\n"
-                              "Procedure:\n"
-                              "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
-                              "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
-                              "Slowly lower the weights back to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/biceps_curl.jpg";  // Ensure this path is correct
-        } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Pulley Push-down\n"
-                              "Description: Targets the triceps, improving upper arm strength.\n"
-                              "Muscles Worked: Triceps\n"
-                              "Equipment: Cable Machine\n\n"
-                              "Procedure:\n"
-                              "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
-                              "Grasp the bar with an overhand grip, elbows close to your sides.\n"
-                              "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/pulley_push_down.jpg";  // Ensure this path is correct
-        }
+        exerciseDetails = "Exercise: Biceps Curl\n"
+                          "Description: Strengthens the biceps, improves arm definition.\n"
+                          "Muscles Worked: Biceps\n"
+                          "Equipment: Dumbbells, Barbell\n\n"
+                          "Procedure:\n"
+                          "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
+                          "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
+                          "Slowly lower the weights back to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/bicepscurl.jpg";  // Ensure this path is correct
+    } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Pulley Push-down\n"
+                          "Description: Targets the triceps, improving upper arm strength.\n"
+                          "Muscles Worked: Triceps\n"
+                          "Equipment: Cable Machine\n\n"
+                          "Procedure:\n"
+                          "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
+                          "Grasp the bar with an overhand grip, elbows close to your sides.\n"
+                          "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/pulleypushdown.jpg";  // Ensure this path is correct
+    }
 
-     else if (exerciseName.compare("Squats", Qt::CaseInsensitive) == 0) {
+    else if (exerciseName.compare("Squats", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Squats\n"
                           "Description: Essential for lower body strength.\n"
                           "Muscles Worked: Quadriceps, Hamstrings, Glutes\n"
@@ -686,6 +658,22 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Intermediate: 4 sets of 8-10 reps\n"
                           "Advanced: 5 sets of 6-8 reps\n";
         imagePath = ":/images/squats.jpg";
+
+    } else if (exerciseName.compare("Pull-Ups/Chin-Ups", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Pull-Ups/Chin-Ups\n"
+                          "Description: Effective for back and biceps development.\n"
+                          "Muscles Worked: Back, Biceps\n"
+                          "Equipment: Pull-Up Bar\n\n"
+                          "Procedure:\n"
+                          "Grasp the pull-up bar with an overhand grip for pull-ups or underhand grip for chin-ups.\n"
+                          "Pull your body up until your chin is above the bar.\n"
+                          "Lower your body back to the starting position in a controlled manner.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 4-6 reps\n"
+                          "Intermediate: 4 sets of 6-8 reps\n"
+                          "Advanced: 5 sets of 8-10 reps\n";
+        imagePath = ":/images/chinup.jpg";
+
     } else if (exerciseName.compare("Bench Press", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Bench Press\n"
                           "Description: Upper body strength and muscle gain.\n"
@@ -699,63 +687,37 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Beginner: 3 sets of 8-10 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/bench_press.jpg";
-    } else if (exerciseName.compare("Lat Pulldowns", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Lat Pulldowns\n"
-                          "Description: Targets the back muscles.\n"
-                          "Muscles Worked: Latissimus Dorsi, Biceps\n"
-                          "Equipment: Lat Pulldown Machine\n\n"
-                          "Procedure:\n"
-                          "Sit at the lat pulldown machine and grasp the bar with a wide grip.\n"
-                          "Pull the bar down to your chest while squeezing your shoulder blades together.\n"
-                          "Slowly return the bar to the starting position.\n\n"
-                          "Repetitions:\n"
-                          "Beginner: 3 sets of 10-12 reps\n"
-                          "Intermediate: 4 sets of 8-10 reps\n"
-                          "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/lat_pulldowns.jpg";
+        imagePath = ":/images/benchpress.jpg";
     } else if (exerciseName.compare("Leg Press", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Leg Press\n"
                           "Description: Strengthens the lower body.\n"
                           "Muscles Worked: Quadriceps, Hamstrings, Glutes\n"
                           "Equipment: Leg Press Machine\n\n"
                           "Procedure:\n"
-                          "Sit on the leg press machine with feet shoulder-width apart on the platform.\n"
-                          "Push the platform away by extending your legs.\n"
-                          "Slowly bend your knees to return to the starting position.\n\n"
-                          "Repetitions:\n"
-                          "Beginner: 3 sets of 12-15 reps\n"
-                          "Intermediate: 4 sets of 10-12 reps\n"
-                          "Advanced: 5 sets of 8-10 reps\n";
-        imagePath = ":/images/leg_press.jpg";
-    } else if (exerciseName.compare("Dumbbell Press", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Dumbbell Press\n"
-                          "Description: Versatile for upper body workouts.\n"
-                          "Muscles Worked: Chest, Shoulders, Triceps\n"
-                          "Equipment: Dumbbells\n\n"
-                          "Procedure:\n"
-                          "Lie on a bench with a dumbbell in each hand.\n"
-                          "Press the dumbbells above your chest until your arms are fully extended.\n"
-                          "Lower the dumbbells to the starting position.\n\n"
+                          "Sit in the leg press machine with feet shoulder-width apart on the platform.\n"
+                          "Push the platform away from you by extending your legs, without locking your knees.\n"
+                          "Slowly return to the starting position.\n\n"
                           "Repetitions:\n"
                           "Beginner: 3 sets of 10-12 reps\n"
                           "Intermediate: 4 sets of 8-10 reps\n"
                           "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/dumbbell_press.jpg";
-    } else if (exerciseName.compare("Kettlebell Swings", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Kettlebell Swings\n"
-                          "Description: Full-body exercise that also boosts cardio.\n"
-                          "Muscles Worked: Glutes, Hamstrings, Core\n"
-                          "Equipment: Kettlebell\n\n"
+        imagePath = ":/images/legpress.jpg";
+
+    }else if (exerciseName.compare("Military Press", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Military Press\n"
+                          "Description: Develops shoulder strength and stability.\n"
+                          "Muscles Worked: Shoulders, Triceps\n"
+                          "Equipment: Barbell, Dumbbells\n\n"
                           "Procedure:\n"
-                          "Stand with feet hip-width apart, holding the kettlebell with both hands.\n"
-                          "Bend at your hips and swing the kettlebell between your legs.\n"
-                          "Thrust your hips forward to swing the kettlebell to shoulder height.\n\n"
+                          "Stand with your feet shoulder-width apart, holding a barbell or dumbbells at shoulder height.\n"
+                          "Press the weight overhead until your arms are fully extended.\n"
+                          "Slowly lower the weight back to shoulder height.\n\n"
                           "Repetitions:\n"
-                          "Beginner: 3 sets of 15-20 reps\n"
-                          "Intermediate: 4 sets of 12-15 reps\n"
-                          "Advanced: 5 sets of 10-12 reps\n";
-        imagePath = ":/images/kettlebell_swings.jpg";
+                          "Beginner: 3 sets of 8-10 reps\n"
+                          "Intermediate: 4 sets of 6-8 reps\n"
+                          "Advanced: 5 sets of 5 reps\n";
+        imagePath = ":/images/militarypress.jpg";  // Ensure this path is correct
+
     } else if (exerciseName.compare("Walking/Jogging", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Walking/Jogging\n"
                           "Description: Easy to start and effective for weight loss.\n\n"
@@ -766,7 +728,7 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Beginner: 20-30 minutes, 3 times a week\n"
                           "Intermediate: 30-40 minutes, 4 times a week\n"
                           "Advanced: 40-60 minutes, 5 times a week\n";
-        imagePath = ":/images/walking_jogging.jpg";
+        imagePath = ":/images/jogging.jpg";
     } else if (exerciseName.compare("Cycling", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Cycling\n"
                           "Description: Low-impact and great for burning calories.\n\n"
@@ -802,13 +764,74 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Beginner: 20-30 minutes, 3 times a week\n"
                           "Intermediate: 30-40 minutes, 4 times a week\n"
                           "Advanced: 40-60 minutes, 5 times a week\n";
-        imagePath = ":/images/elliptical_trainer.jpg";
-    } else {
+        imagePath = ":/images/elliptricaltrainer.jpg";
+    } else if (exerciseName.compare("Running", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: Running\n"
+                              "Description: Effective cardio exercise for overall fitness and weight loss.\n\n"
+                              "Procedure:\n"
+                              "Run at a moderate pace, gradually increasing speed and distance.\n"
+                              "Maintain good posture, keeping your back straight and arms relaxed.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 20-30 minutes, 3 times a week\n"
+                              "Intermediate: 30-40 minutes, 4 times a week\n"
+                              "Advanced: 40-60 minutes, 5 times a week\n";
+            imagePath = ":/images/running.jpg";  // Make sure this path is correct
+        }
+
+        // Adding Jumping Rope
+        else if (exerciseName.compare("Jumping Rope", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: Jumping Rope\n"
+                              "Description: High-intensity cardio exercise that improves coordination and burns calories.\n\n"
+                              "Procedure:\n"
+                              "Jump over the rope as it passes under your feet.\n"
+                              "Maintain a steady rhythm, keeping your jumps light and quick.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 3 sets of 1-2 minutes\n"
+                              "Intermediate: 3 sets of 2-3 minutes\n"
+                              "Advanced: 4 sets of 3-5 minutes\n";
+            imagePath = ":/images/jumpingrope.jpg";  // Make sure this path is correct
+        }
+
+        // Adding High-Intensity Interval Training (HIIT)
+        else if (exerciseName.compare("High-Intensity Interval Training (HIIT)", Qt::CaseInsensitive) == 0 ||
+                 exerciseName.compare("HIIT", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: High-Intensity Interval Training (HIIT)\n"
+                              "Description: Intense workout involving short bursts of activity followed by rest periods.\n\n"
+                              "Procedure:\n"
+                              "Perform a series of exercises (e.g., sprints, jumping jacks) at maximum effort for 20-30 seconds.\n"
+                              "Rest for 10-15 seconds between exercises.\n"
+                              "Repeat the cycle for 15-20 minutes.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 10-15 minutes, 2-3 times a week\n"
+                              "Intermediate: 15-20 minutes, 3-4 times a week\n"
+                              "Advanced: 20-30 minutes, 4-5 times a week\n";
+            imagePath = ":/images/high.jpg";  // Make sure this path is correct
+        }
+
+        // Adding Leg Curl
+       else if (exerciseName.compare("Leg Curl", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: Leg Curl\n"
+                              "Description: Strengthens the hamstrings and improves leg stability.\n"
+                              "Muscles Worked: Hamstrings\n"
+                              "Equipment: Leg Curl Machine\n\n"
+                              "Procedure:\n"
+                              "Lie face down on the leg curl machine with your ankles under the padded bar.\n"
+                              "Curl your legs upward towards your buttocks.\n"
+                              "Slowly lower your legs back to the starting position.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 3 sets of 10-12 reps\n"
+                              "Intermediate: 4 sets of 8-10 reps\n"
+                              "Advanced: 5 sets of 6-8 reps\n";
+            imagePath = ":/images/legcurl.jpg";  // Make sure this path is correct
+        }
+
+     else {
         exerciseDetails = "No exercise found with the name '" + exerciseName + "'.";
         imagePath = "";
     }
 
     // Set the exercise details and image on the UI
+    ui->exerciseDetailsLabel2->setWordWrap(true);
     ui->exerciseDetailsLabel2->setText(exerciseDetails);
     ui->exerciseImagelabel2->setPixmap(QPixmap(imagePath));
     ui->exerciseImagelabel2->setScaledContents(true); // Scale image to fit the QLabel
@@ -841,7 +864,7 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 3 sets of 8-10 reps\n"
                           "Intermediate: 4 sets of 6-8 reps\n"
                           "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/bench_press.jpg";
+        imagePath = ":/images/benchpress.jpg";
     } else if (exerciseName.compare("Squats", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Squats\n"
                           "Description: Builds lower body strength and power.\n"
@@ -858,36 +881,36 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Advanced: 5 sets of 6-8 reps\n";
         imagePath = ":/images/squats.jpg";
     }    else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Biceps Curl\n"
-                              "Description: Strengthens the biceps, improves arm definition.\n"
-                              "Muscles Worked: Biceps\n"
-                              "Equipment: Dumbbells, Barbell\n\n"
-                              "Procedure:\n"
-                              "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
-                              "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
-                              "Slowly lower the weights back to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/biceps_curl.jpg";  // Ensure this path is correct
-        } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Pulley Push-down\n"
-                              "Description: Targets the triceps, improving upper arm strength.\n"
-                              "Muscles Worked: Triceps\n"
-                              "Equipment: Cable Machine\n\n"
-                              "Procedure:\n"
-                              "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
-                              "Grasp the bar with an overhand grip, elbows close to your sides.\n"
-                              "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/pulley_push_down.jpg";  // Ensure this path is correct
-        }
+        exerciseDetails = "Exercise: Biceps Curl\n"
+                          "Description: Strengthens the biceps, improves arm definition.\n"
+                          "Muscles Worked: Biceps\n"
+                          "Equipment: Dumbbells, Barbell\n\n"
+                          "Procedure:\n"
+                          "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
+                          "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
+                          "Slowly lower the weights back to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/bicepscurl.jpg";  // Ensure this path is correct
+    } else if (exerciseName.compare("Pulley Push-down", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Pulley Push-down\n"
+                          "Description: Targets the triceps, improving upper arm strength.\n"
+                          "Muscles Worked: Triceps\n"
+                          "Equipment: Cable Machine\n\n"
+                          "Procedure:\n"
+                          "Stand facing a pulley machine with a straight bar attached to the top pulley.\n"
+                          "Grasp the bar with an overhand grip, elbows close to your sides.\n"
+                          "Push the bar down until your arms are fully extended, then slowly return to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/pulleypushdown.jpg";  // Ensure this path is correct
+    }
 
-     else if (exerciseName.compare("Deadlifts", Qt::CaseInsensitive) == 0) {
+    else if (exerciseName.compare("Deadlifts", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Deadlifts\n"
                           "Description: Builds overall body strength and muscle mass.\n"
                           "Muscles Worked: Back, Glutes, Hamstrings\n"
@@ -901,23 +924,7 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 3 sets of 6-8 reps\n"
                           "Intermediate: 4 sets of 5-7 reps\n"
                           "Advanced: 5 sets of 4-6 reps\n";
-        imagePath = ":/images/deadlifts.jpg";
-
-        }else if (exerciseName.compare("Military Press", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Military Press\n"
-                              "Description: Develops shoulder strength and stability.\n"
-                              "Muscles Worked: Shoulders, Triceps\n"
-                              "Equipment: Barbell, Dumbbells\n\n"
-                              "Procedure:\n"
-                              "Stand with your feet shoulder-width apart, holding a barbell or dumbbells at shoulder height.\n"
-                              "Press the weight overhead until your arms are fully extended.\n"
-                              "Slowly lower the weight back to shoulder height.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 8-10 reps\n"
-                              "Intermediate: 4 sets of 6-8 reps\n"
-                              "Advanced: 5 sets of 5 reps\n";
-            imagePath = ":/images/military_press.jpg";  // Ensure this path is correct
-
+        imagePath = ":/images/deadlift.jpg";
 
     } else if (exerciseName.compare("Lat Pulldowns", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Lat Pulldowns\n"
@@ -932,7 +939,7 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 3 sets of 10-12 reps\n"
                           "Intermediate: 4 sets of 8-10 reps\n"
                           "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/lat_pulldowns.jpg";
+        imagePath = ":/images/lat-pulldown.jpg";
     } else if (exerciseName.compare("Leg Press", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Leg Press\n"
                           "Description: Strengthens the lower body.\n"
@@ -946,21 +953,8 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 3 sets of 10-12 reps\n"
                           "Intermediate: 4 sets of 8-10 reps\n"
                           "Advanced: 5 sets of 6-8 reps\n";
-        imagePath = ":/images/leg_press.jpg";
-    } else if (exerciseName.compare("Dumbbell Press", Qt::CaseInsensitive) == 0) {
-        exerciseDetails = "Exercise: Dumbbell Press\n"
-                          "Description: Versatile for upper body workouts.\n"
-                          "Muscles Worked: Chest, Shoulders, Triceps\n"
-                          "Equipment: Dumbbells\n\n"
-                          "Procedure:\n"
-                          "Lie on a bench with a dumbbell in each hand, arms extended above your chest.\n"
-                          "Lower the dumbbells to the sides of your chest, keeping elbows slightly bent.\n"
-                          "Press the dumbbells back up to the starting position.\n\n"
-                          "Repetitions:\n"
-                          "Beginner: 3 sets of 8-10 reps\n"
-                          "Intermediate: 4 sets of 6-8 reps\n"
-                          "Advanced: 5 sets of 5 reps\n";
-        imagePath = ":/images/dumbbell_press.jpg";
+        imagePath = ":/images/legpress.jpg";
+
     } else if (exerciseName.compare("Kettlebell Swings", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Kettlebell Swings\n"
                           "Description: Full-body exercise that also boosts cardio.\n"
@@ -975,7 +969,7 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 3 sets of 15 reps\n"
                           "Intermediate: 4 sets of 12 reps\n"
                           "Advanced: 5 sets of 10 reps\n";
-        imagePath = ":/images/kettlebell_swings.jpg";
+        imagePath = ":/images/kettlebellswing.jpg";
     } else if (exerciseName.compare("Walking/Jogging", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Walking/Jogging\n"
                           "Description: Easy to start and effective for weight loss.\n"
@@ -989,7 +983,7 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Beginner: 20-30 minutes\n"
                           "Intermediate: 30-45 minutes\n"
                           "Advanced: 45-60 minutes\n";
-        imagePath = ":/images/walking_jogging.jpg";
+        imagePath = ":/images/walking.jpg";
     } else if (exerciseName.compare("Cycling", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Cycling\n"
                           "Description: Low-impact and great for burning calories.\n"
@@ -1004,6 +998,20 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Intermediate: 30-45 minutes\n"
                           "Advanced: 45-60 minutes\n";
         imagePath = ":/images/cycling.jpg";
+
+    }  else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: Biceps Curl\n"
+                              "Description: Strengthens the biceps, improves arm definition.\n"
+                              "Muscles Worked: Biceps\n"
+                              "Equipment: Dumbbells, Barbell\n\n"
+                              "Procedure:\n"
+                              "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
+                              "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
+                              "Slowly lower the weights back to the starting position.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 3 sets of 10-12 reps\n"
+                              "Intermediate: 4 sets of 8-10 reps\n"
+                              "Advanced: 5 sets of 6-8 reps\n";
     } else if (exerciseName.compare("Swimming", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Swimming\n"
                           "Description: Full-body workout that is gentle on joints.\n"
@@ -1018,13 +1026,41 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Intermediate: 30-45 minutes\n"
                           "Advanced: 45-60 minutes\n";
         imagePath = ":/images/swimming.jpg";
-    } else {
+
+    } else if (exerciseName.compare("Elliptical Trainer", Qt::CaseInsensitive) == 0) {
+            exerciseDetails = "Exercise: Elliptical Trainer\n"
+                              "Description: Effective for cardiovascular health and weight loss.\n\n"
+                              "Procedure:\n"
+                              "Stand on the machine and hold the handles.\n"
+                              "Begin pedaling at a steady pace.\n"
+                              "Increase resistance and intensity gradually.\n\n"
+                              "Repetitions:\n"
+                              "Beginner: 20-30 minutes, 3 times a week\n"
+                              "Intermediate: 30-40 minutes, 4 times a week\n"
+                              "Advanced: 40-60 minutes, 5 times a week\n";
+            imagePath = ":/images/elliptricaltrainer.jpg";
+        }
+    else if (exerciseName.compare("Rowing Machine", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Rowing Machine\n"
+                          "Description: Full-body workout that also builds endurance.\n\n"
+                          "Procedure:\n"
+                          "Sit on the rowing machine with feet secured on the footrests.\n"
+                          "Grasp the handle with an overhand grip.\n"
+                          "Push through your legs, then pull the handle towards your chest.\n"
+                          "Return to the starting position in a controlled manner.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 20-30 minutes, 3 times a week\n"
+                          "Intermediate: 30-40 minutes, 4 times a week\n"
+                          "Advanced: 40-60 minutes, 5 times a week\n";
+        imagePath = ":/images/Rowingmachine.jpg";
+        }
+     else {
         exerciseDetails = "No exercise found with the given name.";
         imagePath = ":/images/not_found.jpg";  // Replace with a 'not found' image path
     }
 
     // Set exercise details to label_7
-
+    ui->exerciseDetailsLabel1->setWordWrap(true);
     ui->exerciseDetailsLabel1->setText(exerciseDetails);
 
     // Load image and set it to label_8
