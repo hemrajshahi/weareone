@@ -418,6 +418,8 @@ void MainWindow::on_EctomorphexerciseAndWorkoutButton_clicked()
     ui->stackedWidget->setCurrentWidget(ui->Ectomorphexercise);
 }
 
+//ectomorph exercise showing
+
 void MainWindow::on_Ectoshowexercise_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->Ectoshowexercise);
@@ -813,7 +815,7 @@ void MainWindow::on_Mesoshowexercise_clicked()
 }
 
 
-//endomorph exercise
+//endomorph exercise showing
 
 
 void MainWindow::on_Endoshowexercise_clicked()
