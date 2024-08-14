@@ -29,8 +29,1746 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>1</number>
     </property>
+    <widget class="QWidget" name="Ectoshowexercise">
+     <widget class="QFrame" name="frame_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_81">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>751</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_82">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseDetailsLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>170</y>
+         <width>461</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="exerciseName">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>130</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#exerciseName {
+    background-color: #857d7b;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */
+}
+
+#exerciseName:focus {
+    background-color: #857d7b;  /* Keep the same background color when focused */
+    color: #ffffff;             /* Keep the same text color when focused */
+    border: 1px solid #444444;  /* Keep the same border color when focused */
+}
+
+#exerciseName:hover {
+    background-color: #857d7b;  /* Keep the same background color when hovered */
+    color: #ffffff;             /* Keep the same text color when hovered */
+    border: 1px solid #444444;  /* Keep the same border color when hovered */
+}
+
+#exerciseName:disabled {
+    background-color: #857d7b;  /* Keep the same background color when disabled */
+    color: #ffffff;             /* Keep the same text color when disabled */
+    border: 1px solid #444444;  /* Keep the same border color when disabled */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="back4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back4{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back4:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back4:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseImageLabel">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>170</y>
+         <width>231</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Ectomorphexercise">
+     <widget class="QFrame" name="frame_30">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QListWidget" name="exerciselist">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>256</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. Squats</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="background">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Deadlifts</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Bench Press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4. Pull-Ups/Chin-Ups</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5. Shoulder Press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8. Biceps Curl</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9. Pulley push-down</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_70">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>321</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_71">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>80</y>
+         <width>341</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(::/../../Downloads/hhhhh.jpg);
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/hhhhh.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_72">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>10</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="showexercise">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>510</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#showexercise{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#showexercise:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#showexercise:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ShowExercise</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="exerciselist_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>430</y>
+         <width>256</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;
+    color: #ffffff;           
+    border: 1px solid #444444; 
+    font-size: 14px;         
+    font-weight: bold;   </string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. Rowing Machine</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Cycling</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Swimming</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_73">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE NAME:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_74">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>380</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:100px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>CARDIO EXERCISE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="back5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back5{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back5:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back5:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <zorder>label_70</zorder>
+      <zorder>exerciselist</zorder>
+      <zorder>label_71</zorder>
+      <zorder>label_72</zorder>
+      <zorder>showexercise</zorder>
+      <zorder>exerciselist_2</zorder>
+      <zorder>label_73</zorder>
+      <zorder>label_74</zorder>
+      <zorder>back5</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Endomorphexercise">
+     <widget class="QFrame" name="frame_31">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QListWidget" name="exerciselist_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>256</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. Squats</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="background">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Deadlifts</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Bench Press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4. Lat Pulldowns</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6. Kettlebell Swings</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7. Leg Press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8. Biceps Curl</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9. Pully push-down</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_85">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>381</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(::/../../Downloads/hhhhh.jpg);
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/hhhhh.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_86">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="exerciselist_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>256</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;
+    color: #ffffff;           
+    border: 1px solid #444444; 
+    font-size: 14px;         
+    font-weight: bold;   </string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. Walking/Jogging</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Cycling</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Swimming</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4. Elliptical Trainer</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5. Rowing Machine</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="back6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back6{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back6:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back7:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_91">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>STRENGTH TRAINING:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_92">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>350</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:100px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>CARDIO EXERCISE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_93">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>321</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="showexercise2">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>510</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#showexercise2{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#showexercise2:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#showexercise2:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>ShowExercise</string>
+       </property>
+      </widget>
+      <zorder>label_85</zorder>
+      <zorder>label_86</zorder>
+      <zorder>back6</zorder>
+      <zorder>label_93</zorder>
+      <zorder>exerciselist_3</zorder>
+      <zorder>exerciselist_4</zorder>
+      <zorder>label_92</zorder>
+      <zorder>label_91</zorder>
+      <zorder>showexercise2</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Mesomorphexercise">
+     <widget class="QFrame" name="frame_32">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_95">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="exerciselist_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>160</y>
+         <width>256</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. Squats</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="background">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Deadlifts</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Bench Press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5. Pull-Ups/Chin-Ups</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6. Leg Curl</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7. Biceps curl</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8. Pulley push-down</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9. Military press</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_97">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>321</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_100">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>80</y>
+         <width>381</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(::/../../Downloads/hhhhh.jpg);
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/hhhhh.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_101">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>110</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>STRENGTH TRAINING:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_102">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>340</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:100px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>CARDIO EXERCISE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="exerciselist_6">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>256</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;
+    color: #ffffff;           
+    border: 1px solid #444444; 
+    font-size: 14px;         
+    font-weight: bold;   </string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1. High-Intensity Interval Training (HIIT)</string>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2. Running</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3. Jump Rope</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="foreground">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="back7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back7{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back7:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back7:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="showexercise3">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>510</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#showexercise3{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#showexercise3:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#showexercise3:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ShowExercise</string>
+       </property>
+      </widget>
+      <zorder>label_95</zorder>
+      <zorder>label_97</zorder>
+      <zorder>label_100</zorder>
+      <zorder>label_101</zorder>
+      <zorder>label_102</zorder>
+      <zorder>exerciselist_6</zorder>
+      <zorder>back7</zorder>
+      <zorder>exerciselist_5</zorder>
+      <zorder>showexercise3</zorder>
+     </widget>
+    </widget>
     <widget class="QWidget" name="loginpage">
      <widget class="QFrame" name="frame">
       <property name="geometry">
@@ -117,12 +1855,25 @@ background-color: #F0EDEE;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">username-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -146,12 +1897,25 @@ border-radius:5px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">password-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -391,12 +2155,25 @@ color: #1A1423;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-padding-bottom:7px;
-border-bottom-color: rgb(26, 20, 35);
-border-radius:5px;</string>
+        <string notr="true">lastname-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -420,12 +2197,25 @@ border-radius:5px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">password_2-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -452,12 +2242,25 @@ border-radius:5px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">confirm-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -484,12 +2287,25 @@ border-radius:5px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">firstname-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -513,12 +2329,25 @@ border-radius:5px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">border:none;
-border-bottom:2px solid rgba(46, 82, 101, 200);
-color:rgba(0, 0, 0, 240);
-border-bottom-color: rgb(26, 20, 35);
-padding-bottom:7px;
-border-radius:5px;</string>
+        <string notr="true">email-&gt;setStyleSheet(
+    &quot;QLineEdit {&quot;
+    &quot;    border: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(46, 82, 101, 200);&quot;
+    &quot;    color: rgba(0, 0, 0, 240);&quot;
+    &quot;    padding-bottom: 7px;&quot;
+    &quot;    border-radius: 5px;&quot;
+    &quot;    font-size: 16px;&quot; /* Adjust font size for input text */
+    &quot;}&quot;
+    &quot;QLineEdit:focus {&quot;
+    &quot;    outline: none;&quot;
+    &quot;    border-bottom: 2px solid rgba(0, 120, 215, 240);&quot; /* Change color on focus */
+    &quot;}&quot;
+    &quot;QLineEdit::placeholder {&quot;
+    &quot;    color: rgba(100, 100, 100, 200);&quot;
+    &quot;    font-size: 12px;&quot; /* Placeholder font size */
+    &quot;}&quot;
+);
+</string>
        </property>
        <property name="text">
         <string/>
@@ -1657,10 +3486,10 @@ border-radius:50px;</string>
         <string>A guide to the endomorph body type and how to personalize your workout, and diet plans.</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="home">
+      <widget class="QPushButton" name="home1">
        <property name="geometry">
         <rect>
-         <x>40</x>
+         <x>10</x>
          <y>20</y>
          <width>61</width>
          <height>31</height>
@@ -1676,17 +3505,17 @@ border-radius:50px;</string>
        <property name="styleSheet">
         <string notr="true">
 
-QPushButton#home{
+QPushButton#home1{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
         color:rgba(255, 255, 255, 210);
         border-radius:5px;
 }
 
-QPushButton#home:hover{
+QPushButton#home1:hover{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
 }
 
-QPushButton#home:pressed{
+QPushButton#home1:pressed{
         padding-left:5px;
         padding-top:5px;
         background-color:rgba(150, 123, 111, 255);
@@ -2283,18 +4112,18 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-&amp;gt; Eat multiple small meals throughout the day to meet caloric needs&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-&amp;gt; Consider using mass gainer supplements to easily increase calorie       intake.&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-&amp;gt; Ensure protein intake is at least 1 gram per pound of bodyweight.&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-&amp;gt; Focus on slow-digesting protein shakes at night to promote muscle  growth during sleep.&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-&amp;gt; Aim for a diet with an energy surplus to support weight gain.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Eat multiple small meals throughout the day to meet caloric needs&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Consider using mass gainer supplements to easily increase calorie       intake.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Ensure protein intake is at least 1 gram per pound of bodyweight.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Focus on slow-digesting protein shakes at night to promote muscle  growth during sleep.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Aim for a diet with an energy surplus to support weight gain.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="hometoecto_2">
+      <widget class="QPushButton" name="backecto">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2313,17 +4142,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <property name="styleSheet">
         <string notr="true">
 
-QPushButton#pushButton_14{
+QPushButton#backecto{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
         color:rgba(255, 255, 255, 210);
         border-radius:5px;
 }
 
-QPushButton#pushButton_14:hover{
+QPushButton#backecto:hover{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
 }
 
-QPushButton#pushButton_14:pressed{
+QPushButton#backecto:pressed{
         padding-left:5px;
         padding-top:5px;
         background-color:rgba(150, 123, 111, 255);
@@ -2351,7 +4180,7 @@ QPushButton#pushButton_14:pressed{
       <zorder>label_32</zorder>
       <zorder>label_33</zorder>
       <zorder>textBrowser_3</zorder>
-      <zorder>hometoecto_2</zorder>
+      <zorder>backecto</zorder>
      </widget>
     </widget>
     <widget class="QWidget" name="Mesomorphfeatures">
@@ -2720,7 +4549,7 @@ background-color: #F0EDEE;
         <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="homemeso">
+      <widget class="QPushButton" name="home3">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -2739,17 +4568,17 @@ background-color: #F0EDEE;
        <property name="styleSheet">
         <string notr="true">
 
-QPushButton#pushButton_9{
+QPushButton#home3{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
         color:rgba(255, 255, 255, 210);
         border-radius:5px;
 }
 
-QPushButton#pushButton_9:hover{
+QPushButton#home3:hover{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
 }
 
-QPushButton#pushButton_9:pressed{
+QPushButton#home3:pressed{
         padding-left:5px;
         padding-top:5px;
         background-color:rgba(150, 123, 111, 255);
@@ -2812,6 +4641,50 @@ border-radius:50px;</string>
        </property>
        <property name="text">
         <string>A guide to the mesomorph body type and how to personalize your workout, and diet plans.</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_7">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>130</y>
+         <width>451</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Build:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; Mesomorphs have a naturally muscular and athletic physique.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;They often have broad shoulders, a narrow waist, and a well-defined muscular structure.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Muscle Development: &lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;They gain muscle relatively easily and have a good muscle definition.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Their body responds well to both resistance training and physical activity.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Fat Storage:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; Mesomorphs can gain fat but are also able to lose it effectively.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Their balanced metabolism allows them to manage their weight with moderate effort.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Metabolism: &lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Their metabolism is generally well-balanced, not too fast or slow.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;This allows for effective muscle gain and fat management.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
@@ -2950,7 +4823,7 @@ color: #1A1423;
         <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="homenutro">
+      <widget class="QPushButton" name="backendo">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -2969,17 +4842,17 @@ color: #1A1423;
        <property name="styleSheet">
         <string notr="true">
 
-QPushButton#homenutro{
+QPushButton#backendo{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
         color:rgba(255, 255, 255, 210);
         border-radius:5px;
 }
 
-QPushButton#homenutro:hover{
+QPushButton#backendo:hover{
         background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
 }
 
-QPushButton#homenutro:pressed{
+QPushButton#backendo:pressed{
         padding-left:5px;
         padding-top:5px;
         background-color:rgba(150, 123, 111, 255);
@@ -3022,6 +4895,9 @@ border-radius:50px;
        <property name="text">
         <string/>
        </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/TURKEY.jpeg</pixmap>
+       </property>
        <property name="scaledContents">
         <bool>true</bool>
        </property>
@@ -3060,6 +4936,9 @@ border-radius:50px;
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/EGGS.jpeg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -3100,6 +4979,9 @@ border-radius:50px;
        <property name="text">
         <string/>
        </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/MILKS.jpg</pixmap>
+       </property>
        <property name="scaledContents">
         <bool>true</bool>
        </property>
@@ -3138,6 +5020,9 @@ border-radius:50px;
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/oranges.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -3178,6 +5063,9 @@ border-radius:50px;
        <property name="text">
         <string/>
        </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/yogurt.jpg</pixmap>
+       </property>
        <property name="scaledContents">
         <bool>true</bool>
        </property>
@@ -3216,6 +5104,9 @@ border-radius:50px;
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Resource.qrc">:/Downloads/pear.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -3314,6 +5205,472 @@ color: #1A1423;
         <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
+      <widget class="QTextBrowser" name="textBrowser_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>110</y>
+         <width>271</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;  NUTRIONAL GOALS:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Reduce overall caloric intake to lose fat&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Increase protein intake to build &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;     lean muscle mass&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Focus on a balanced diet with controlled &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;     carbohydrate intake&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_6">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>310</y>
+         <width>281</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;          &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt; Tips:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Follow a high-protein, low-calorie diet to support fat loss and muscle gain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Aim for just over 1 gram of protein per pound of body weight.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Balance the remaining calorie intake between fats and carbohydrates.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Consider intermittent fasting to control calorie intake.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Avoid processed junk foods and focus on whole foods.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Stay hydrated with water, black coffee, or tea.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Limit carbohydrate intake to prevent excessive calorie consumption.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Mesoshowexercise">
+     <widget class="QFrame" name="frame_17">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_108">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="back9">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back9{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back9:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back9:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="exerciseName3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>120</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#exerciseName3 {
+    background-color: #857d7b;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */
+}
+
+#exerciseName3:focus {
+    background-color: #857d7b;  /* Keep the same background color when focused */
+    color: #ffffff;             /* Keep the same text color when focused */
+    border: 1px solid #444444;  /* Keep the same border color when focused */
+}
+
+#exerciseName3:hover {
+    background-color: #857d7b;  /* Keep the same background color when hovered */
+    color: #ffffff;             /* Keep the same text color when hovered */
+    border: 1px solid #444444;  /* Keep the same border color when hovered */
+}
+
+#exerciseName3:disabled {
+    background-color: #857d7b;  /* Keep the same background color when disabled */
+    color: #ffffff;             /* Keep the same text color when disabled */
+    border: 1px solid #444444;  /* Keep the same border color when disabled */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseDetailsLabel2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>461</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseImagelabel2">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>160</y>
+         <width>231</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_84">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>751</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_108</zorder>
+      <zorder>back9</zorder>
+      <zorder>label_84</zorder>
+      <zorder>exerciseImagelabel2</zorder>
+      <zorder>exerciseDetailsLabel2</zorder>
+      <zorder>exerciseName3</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Endoshowexercise">
+     <widget class="QFrame" name="frame_16">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>791</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 253, 248);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_106">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>19</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+       </property>
+       <property name="text">
+        <string>EXERCISE DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="back8">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QPushButton#back8{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#back8:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#back8:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="exerciseName2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#exerciseName2 {
+    background-color: #857d7b;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */
+}
+
+#exerciseName2:focus {
+    background-color: #857d7b;  /* Keep the same background color when focused */
+    color: #ffffff;             /* Keep the same text color when focused */
+    border: 1px solid #444444;  /* Keep the same border color when focused */
+}
+
+#exerciseName2:hover {
+    background-color: #857d7b;  /* Keep the same background color when hovered */
+    color: #ffffff;             /* Keep the same text color when hovered */
+    border: 1px solid #444444;  /* Keep the same border color when hovered */
+}
+
+#exerciseName2:disabled {
+    background-color: #857d7b;  /* Keep the same background color when disabled */
+    color: #ffffff;             /* Keep the same text color when disabled */
+    border: 1px solid #444444;  /* Keep the same border color when disabled */
+}
+
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseDetailsLabel1">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>160</y>
+         <width>461</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: #857d7b ;  /* Dark background color */
+    color: #ffffff;             /* White text color */
+    border: 1px solid #444444;  /* Solid border color */
+    font-size: 14px;            /* Font size for readability */
+    font-weight: bold;          /* Bold text for clarity */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="exerciseImagelabel1">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>160</y>
+         <width>231</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_83">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>751</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_106</zorder>
+      <zorder>back8</zorder>
+      <zorder>label_83</zorder>
+      <zorder>exerciseDetailsLabel1</zorder>
+      <zorder>exerciseName2</zorder>
+      <zorder>exerciseImagelabel1</zorder>
      </widget>
     </widget>
     <widget class="QWidget" name="Endomorphfeatures">
@@ -3615,7 +5972,7 @@ QPushButton#back2:pressed{
         <rect>
          <x>20</x>
          <y>90</y>
-         <width>281</width>
+         <width>261</width>
          <height>441</height>
         </rect>
        </property>
@@ -3713,46 +6070,6 @@ border-radius:50px;</string>
         <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_24">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>30</y>
-         <width>31</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Sitka Banner</family>
-         <pointsize>12</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-
-QPushButton#pushButton_24{
-        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
-        color:rgba(255, 255, 255, 210);
-        border-radius:5px;
-}
-
-QPushButton#pushButton_24:hover{
-        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
-}
-
-QPushButton#pushButton_24:pressed{
-        padding-left:5px;
-        padding-top:5px;
-        background-color:rgba(150, 123, 111, 255);
-}
-</string>
-       </property>
-       <property name="text">
-        <string>&lt;</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_69">
        <property name="geometry">
         <rect>
@@ -3774,6 +6091,88 @@ QPushButton#pushButton_24:pressed{
        </property>
        <property name="text">
         <string>A guide to the endomorph body type and how to personalize your workout, and diet plans.</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_4">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>140</y>
+         <width>451</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Build&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;: Endomorphs tend to have a rounder, softer physique with wider hips and a broader waist.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;They may appear stockier and more solid.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Muscle Development:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; They can gain muscle, but they also tend to store more fat.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Building lean muscle can be a challenge due to their body’s propensity to store fat. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Fat Storage:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; They have a slower metabolism, which means they gain weight easily, particularly around the midsection.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Managing fat requires more effort and discipline.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Metabolism:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; Their metabolism is slower, which can make it harder to lose fat and requires careful management of caloric intake.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="home2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sitka Banner</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#home2{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#home2:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#home2:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
        </property>
       </widget>
      </widget>
@@ -3798,6 +6197,598 @@ background-color: rgb(255, 255, 255);</string>
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
+      <widget class="QFrame" name="frame_29">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>821</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_139">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>331</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>19</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-radius:150px;
+color: #1A1423;
+
+background-color: #F0EDEE;
+</string>
+        </property>
+        <property name="text">
+         <string>NUTRITION AND DIET</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_140">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>321</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_141">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>290</y>
+          <width>321</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_142">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>421</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: #F0EDEE;
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_143">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>251</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0EDEE;
+border-radius:50px;
+
+color: #1A1423;
+</string>
+        </property>
+        <property name="text">
+         <string>RECOMMENDED DIET</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backmeso">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+
+QPushButton#backmeso{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+        color:rgba(255, 255, 255, 210);
+        border-radius:5px;
+}
+
+QPushButton#backmeso:hover{
+        background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+
+QPushButton#backmeso:pressed{
+        padding-left:5px;
+        padding-top:5px;
+        background-color:rgba(150, 123, 111, 255);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_144">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>120</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/Downloads/fish.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_145">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>120</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/Downloads/EGGS.jpeg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_146">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>260</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/Downloads/cottagecheese.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_147">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>400</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/Downloads/oranges.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_148">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>260</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/yogurt.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_149">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>400</y>
+          <width>171</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/meats.jpg);
+border-radius:50px;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resource.qrc">:/Downloads/avocado.jpeg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_150">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>100</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0EDEE;
+border-radius:50px;
+
+color: #1A1423;
+</string>
+        </property>
+        <property name="text">
+         <string>Proteins:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_151">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>230</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0EDEE;
+border-radius:50px;
+
+color: #1A1423;
+</string>
+        </property>
+        <property name="text">
+         <string>Dairy/vegetables:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_152">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>370</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0EDEE;
+border-radius:50px;
+
+color: #1A1423;
+</string>
+        </property>
+        <property name="text">
+         <string>Fruits:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_15">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;  NUTRIONAL GOALS:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt;Maintain a balanced diet with sufficient protein intake&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt;Adjust calorie and macronutrient intake based on specific fitness goals&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_16">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>310</y>
+          <width>281</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sitka Banner</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #1A1423;
+background-color: #F0EDEE;
+border-radius:50px;</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sitka Banner'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;          &lt;/span&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt; Tips:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Follow a balanced diet that includes a variety of whole foods.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt; Ensure adequate protein intake for muscle maintenance and growth.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt;Adjust caloric intake based on activity level and fitness goals.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt;Avoid excessive consumption of unhealthy foods.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;-&amp;gt;Incorporate both steady-state and high-intensity cardio exercises.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
    </widget>
