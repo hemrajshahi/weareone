@@ -30,6 +30,31 @@ private slots:
     void on_mesomorphButton_clicked();
     void on_endomorphButton_clicked();
 
+    //ectomorpph button
+    void on_home1button_clicked();
+    void on_backtoectobutton_clicked();
+    void on_back1button_clicked();
+    void on_back4button_clicked();
+    void on_back5button_clicked();
+
+
+
+    //endomorph button
+    void on_home2button_clicked();
+    void on_backtoendobutton_clicked();
+    void on_back2button_clicked();
+    void on_back6button_clicked();
+    void on_back8button_clicked();
+
+
+    //Mesomorph button
+    void on_home3button_clicked();
+    void on_backtomesobutton_clicked();
+    void on_back3button_clicked();
+    void on_back7button_clicked();
+    void on_back9button_clicked();
+
+
     void on_EctomorphcharacteristicsButton_clicked();
     void on_EctomorphnutritionAndDietButton_clicked();
     void on_EctomorphexerciseAndWorkoutButton_clicked();
@@ -41,6 +66,14 @@ private slots:
     void on_MesomorphcharacteristicsButton_clicked();
     void on_MesomorphnutritionAndDietButton_clicked();
     void on_MesomorphexerciseAndWorkoutButton_clicked();
+
+    void on_Ectoshowexercise_clicked();
+    void on_Endoshowexercise_clicked();
+    void on_Mesoshowexercise_clicked();
+
+
+
+
 
 private:
     Ui::MainWindow *ui;
