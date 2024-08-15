@@ -1,35 +1,77 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/images">
+        <file>avocado.jpeg</file>
         <file>bananas.jpg</file>
+        <file>barbellcurl.jpg</file>
         <file>beef.jpg</file>
         <file>beefecto.jpg</file>
+        <file>benchpress.jpg</file>
         <file>body-types-ectomorph-mesomorph-endomorph-male-female.webp</file>
         <file>breans.jpg</file>
         <file>broc.jpg</file>
+        <file>chinup.jpg</file>
+        <file>cottagecheese.jpg</file>
+        <file>cycling.jpg</file>
+        <file>deadlift.jpg</file>
         <file>diet.jpg</file>
+        <file>Dubbellpress.jpg</file>
         <file>e64f5ebc4b1b19fb64bb2733cb1a5a3e.jpg</file>
         <file>ect.jpg</file>
         <file>ecto diet.jpg</file>
         <file>ectomorph.jpeg</file>
         <file>ectomorph.png</file>
         <file>ectomorph-diet-workout-696x464.webp</file>
+        <file>elliptricaltrainer.jpg</file>
         <file>endodiet.jpg</file>
         <file>endomorph.png</file>
         <file>exer.jpg</file>
         <file>exercise.jpg</file>
         <file>fish.jpg</file>
+        <file>jogging.jpg</file>
+        <file>jumpingrope.jpg</file>
+        <file>kettlebellswing.jpg</file>
+        <file>legcurl.jpg</file>
+        <file>legpress.jpg</file>
         <file>meats.jpg</file>
         <file>mesomorph.png</file>
         <file>milk.jpg</file>
         <file>nutr ecto.jpg</file>
         <file>nutri2.jpg</file>
         <file>oranges.jpg</file>
-        <file>png</file>
+        <file>Overheadpress.jpg</file>
+        <file>pear.jpg</file>
+        <file>pulleypushdown.jpg</file>
         <file>real.png.jpg</file>
         <file>register.jpg</file>
-        <file>try.jpg</file>
+        <file>Rowingmachine.jpg</file>
+        <file>running.jpg</file>
+        <file>Screenshot 2024-08-14 071323.png</file>
+        <file>Screenshot 2024-08-14 071404.png</file>
+        <file>Screenshot 2024-08-14 071441.png</file>
+        <file>Screenshot 2024-08-14 071935.png</file>
+        <file>Screenshot 2024-08-14 072007.png</file>
+        <file>Screenshot 2024-08-14 072042.png</file>
+        <file>Screenshot 2024-08-14 072108.png</file>
+        <file>Screenshot 2024-08-14 072134.png</file>
+        <file>Screenshot 2024-08-14 072211.png</file>
+        <file>squats.jpg</file>
+        <file>swimming.jpg</file>
         <file>veg.jpg</file>
+        <file>walking.jpg</file>
+        <file>WhatsApp Image 2024-08-12 at 22.15.03_af226e4a.jpg</file>
         <file>yogurt.jpg</file>
-        <file>../../Downloads/mesmorphexercise.jpg</file>
+        <file>png</file>
+        <file>EGGS.jpeg</file>
+        <file>hhhhh.jpg</file>
+        <file>mesmorphexercise.jpg</file>
+        <file>MILKS.jpg</file>
+        <file>try.jpg</file>
+        <file>TURKEY.jpeg</file>
+        <file>shoulderpress.jpg</file>
+        <file>bicepscurl.jpg</file>
+        <file>militarypress.jpg</file>
+        <file>lat-pulldown.jpg</file>
+        <file>high.jpg</file>
+        <file>exerciseworkout.jpg</file>
     </qresource>
 </RCC>
