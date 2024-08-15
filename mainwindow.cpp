@@ -98,7 +98,7 @@ MainWindow::~MainWindow()
 void MainWindow::initializeDatabase()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("user_data.db");
+    db.setDatabaseName("fitness.db");
 
     if (!db.open()) {
         QMessageBox::critical(this, "Database Error", db.lastError().text());
@@ -162,45 +162,27 @@ void MainWindow::on_signupButton_clicked()
 }
 void MainWindow::on_registerButton_clicked()
 {
+    ui->registerButton->setEnabled(false); // Disable the register button to prevent re-entry
+
     QString firstname = ui->firstname->text().trimmed();
     QString lastname = ui->lastname->text().trimmed();
     QString email = ui->email->text().trimmed();
     QString password = ui->password_2->text().trimmed();
     QString confirmPassword = ui->confirm->text().trimmed();
 
-    qDebug() << "Registering with firstname:" << firstname << "lastname:" << lastname;
+    // Debugging: Print the lengths of the trimmed fields
+    qDebug() << "Firstname length:" << firstname.length();
+    qDebug() << "Lastname length:" << lastname.length();
+    qDebug() << "Email length:" << email.length();
+    qDebug() << "Password length:" << password.length();
+    qDebug() << "Confirm Password length:" << confirmPassword.length();
 
-    // Use a static regular expression for name validation
-    static const QRegularExpression nameRegex("^[a-zA-Z]+$");
-    bool firstNameValid = nameRegex.match(firstname).hasMatch();
-    bool lastNameValid = nameRegex.match(lastname).hasMatch();
+    QString generatedUsername = firstname + lastname;
 
-    qDebug() << "Name validation results:" << "Firstname valid:" << firstNameValid << "Lastname valid:" << lastNameValid;
+    QSqlQuery checkQuery;
+    checkQuery.prepare("SELECT COUNT(*) FROM users WHERE email = ?");
+    checkQuery.addBindValue(email);
 
-    if (!firstNameValid || !lastNameValid) {
-        QMessageBox::warning(this, "Registration Failed", "First and last names should contain only letters.");
-        return; // Exit the function if validation fails
-    }
-
-    // Validate the email format
-    if (!email.endsWith("@gmail.com")) {
-        qDebug() << "Email validation failed";
-        QMessageBox::warning(this, "Registration Failed", "Email must be a valid @gmail.com address.");
-        return; // Exit the function if validation fails
-    }
-
-    // Validate password match
-    if (password != confirmPassword) {
-        qDebug() << "Password match failed";
-        QMessageBox::warning(this, "Registration Failed", "Passwords do not match.");
-        return; // Exit the function if validation fails
-    }
-
-    // Generate the username
-    generatedUsername = firstname + lastname;
-    qDebug() << "Generated username:" << generatedUsername;
-
-    // Insert user data into the database
     QSqlQuery query;
     query.prepare("INSERT INTO users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
     query.addBindValue(firstname);
@@ -208,13 +190,6 @@ void MainWindow::on_registerButton_clicked()
     query.addBindValue(email);
     query.addBindValue(password);
 
-    if (!query.exec()) {
-        qDebug() << "Database insertion failed:" << query.lastError().text();
-        QMessageBox::critical(this, "Registration Failed", query.lastError().text());
-        return; // Exit the function if the query execution fails
-    }
-
-    // Show success message
     QMessageBox::information(this, "Registration Successful", "You are now registered!\nYour username is: " + generatedUsername);
 
     // Clear the registration fields
@@ -224,9 +199,15 @@ void MainWindow::on_registerButton_clicked()
     ui->password_2->clear();
     ui->confirm->clear();
 
+    ui->registerButton->setEnabled(true); // Re-enable the button after registration
+
     // Switch back to the login page
     ui->stackedWidget->setCurrentWidget(ui->loginpage);
 }
+
+
+
+
 
 
 
@@ -766,66 +747,66 @@ void MainWindow::on_Mesoshowexercise_clicked()
                           "Advanced: 40-60 minutes, 5 times a week\n";
         imagePath = ":/images/elliptricaltrainer.jpg";
     } else if (exerciseName.compare("Running", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Running\n"
-                              "Description: Effective cardio exercise for overall fitness and weight loss.\n\n"
-                              "Procedure:\n"
-                              "Run at a moderate pace, gradually increasing speed and distance.\n"
-                              "Maintain good posture, keeping your back straight and arms relaxed.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 20-30 minutes, 3 times a week\n"
-                              "Intermediate: 30-40 minutes, 4 times a week\n"
-                              "Advanced: 40-60 minutes, 5 times a week\n";
-            imagePath = ":/images/running.jpg";  // Make sure this path is correct
-        }
+        exerciseDetails = "Exercise: Running\n"
+                          "Description: Effective cardio exercise for overall fitness and weight loss.\n\n"
+                          "Procedure:\n"
+                          "Run at a moderate pace, gradually increasing speed and distance.\n"
+                          "Maintain good posture, keeping your back straight and arms relaxed.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 20-30 minutes, 3 times a week\n"
+                          "Intermediate: 30-40 minutes, 4 times a week\n"
+                          "Advanced: 40-60 minutes, 5 times a week\n";
+        imagePath = ":/images/running.jpg";  // Make sure this path is correct
+    }
 
-        // Adding Jumping Rope
-        else if (exerciseName.compare("Jumping Rope", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Jumping Rope\n"
-                              "Description: High-intensity cardio exercise that improves coordination and burns calories.\n\n"
-                              "Procedure:\n"
-                              "Jump over the rope as it passes under your feet.\n"
-                              "Maintain a steady rhythm, keeping your jumps light and quick.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 1-2 minutes\n"
-                              "Intermediate: 3 sets of 2-3 minutes\n"
-                              "Advanced: 4 sets of 3-5 minutes\n";
-            imagePath = ":/images/jumpingrope.jpg";  // Make sure this path is correct
-        }
+    // Adding Jumping Rope
+    else if (exerciseName.compare("Jumping Rope", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Jumping Rope\n"
+                          "Description: High-intensity cardio exercise that improves coordination and burns calories.\n\n"
+                          "Procedure:\n"
+                          "Jump over the rope as it passes under your feet.\n"
+                          "Maintain a steady rhythm, keeping your jumps light and quick.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 1-2 minutes\n"
+                          "Intermediate: 3 sets of 2-3 minutes\n"
+                          "Advanced: 4 sets of 3-5 minutes\n";
+        imagePath = ":/images/jumpingrope.jpg";  // Make sure this path is correct
+    }
 
-        // Adding High-Intensity Interval Training (HIIT)
-        else if (exerciseName.compare("High-Intensity Interval Training (HIIT)", Qt::CaseInsensitive) == 0 ||
-                 exerciseName.compare("HIIT", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: High-Intensity Interval Training (HIIT)\n"
-                              "Description: Intense workout involving short bursts of activity followed by rest periods.\n\n"
-                              "Procedure:\n"
-                              "Perform a series of exercises (e.g., sprints, jumping jacks) at maximum effort for 20-30 seconds.\n"
-                              "Rest for 10-15 seconds between exercises.\n"
-                              "Repeat the cycle for 15-20 minutes.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 10-15 minutes, 2-3 times a week\n"
-                              "Intermediate: 15-20 minutes, 3-4 times a week\n"
-                              "Advanced: 20-30 minutes, 4-5 times a week\n";
-            imagePath = ":/images/high.jpg";  // Make sure this path is correct
-        }
+    // Adding High-Intensity Interval Training (HIIT)
+    else if (exerciseName.compare("High-Intensity Interval Training (HIIT)", Qt::CaseInsensitive) == 0 ||
+             exerciseName.compare("HIIT", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: High-Intensity Interval Training (HIIT)\n"
+                          "Description: Intense workout involving short bursts of activity followed by rest periods.\n\n"
+                          "Procedure:\n"
+                          "Perform a series of exercises (e.g., sprints, jumping jacks) at maximum effort for 20-30 seconds.\n"
+                          "Rest for 10-15 seconds between exercises.\n"
+                          "Repeat the cycle for 15-20 minutes.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 10-15 minutes, 2-3 times a week\n"
+                          "Intermediate: 15-20 minutes, 3-4 times a week\n"
+                          "Advanced: 20-30 minutes, 4-5 times a week\n";
+        imagePath = ":/images/high.jpg";  // Make sure this path is correct
+    }
 
-        // Adding Leg Curl
-       else if (exerciseName.compare("Leg Curl", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Leg Curl\n"
-                              "Description: Strengthens the hamstrings and improves leg stability.\n"
-                              "Muscles Worked: Hamstrings\n"
-                              "Equipment: Leg Curl Machine\n\n"
-                              "Procedure:\n"
-                              "Lie face down on the leg curl machine with your ankles under the padded bar.\n"
-                              "Curl your legs upward towards your buttocks.\n"
-                              "Slowly lower your legs back to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
-            imagePath = ":/images/legcurl.jpg";  // Make sure this path is correct
-        }
+    // Adding Leg Curl
+    else if (exerciseName.compare("Leg Curl", Qt::CaseInsensitive) == 0) {
+        exerciseDetails = "Exercise: Leg Curl\n"
+                          "Description: Strengthens the hamstrings and improves leg stability.\n"
+                          "Muscles Worked: Hamstrings\n"
+                          "Equipment: Leg Curl Machine\n\n"
+                          "Procedure:\n"
+                          "Lie face down on the leg curl machine with your ankles under the padded bar.\n"
+                          "Curl your legs upward towards your buttocks.\n"
+                          "Slowly lower your legs back to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
+        imagePath = ":/images/legcurl.jpg";  // Make sure this path is correct
+    }
 
-     else {
+    else {
         exerciseDetails = "No exercise found with the name '" + exerciseName + "'.";
         imagePath = "";
     }
@@ -1000,18 +981,18 @@ void MainWindow::on_Endoshowexercise_clicked()
         imagePath = ":/images/cycling.jpg";
 
     }  else if (exerciseName.compare("Biceps Curl", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Biceps Curl\n"
-                              "Description: Strengthens the biceps, improves arm definition.\n"
-                              "Muscles Worked: Biceps\n"
-                              "Equipment: Dumbbells, Barbell\n\n"
-                              "Procedure:\n"
-                              "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
-                              "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
-                              "Slowly lower the weights back to the starting position.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 3 sets of 10-12 reps\n"
-                              "Intermediate: 4 sets of 8-10 reps\n"
-                              "Advanced: 5 sets of 6-8 reps\n";
+        exerciseDetails = "Exercise: Biceps Curl\n"
+                          "Description: Strengthens the biceps, improves arm definition.\n"
+                          "Muscles Worked: Biceps\n"
+                          "Equipment: Dumbbells, Barbell\n\n"
+                          "Procedure:\n"
+                          "Stand with feet shoulder-width apart, holding dumbbells or a barbell with palms facing forward.\n"
+                          "Curl the weights up towards your shoulders while keeping your elbows close to your torso.\n"
+                          "Slowly lower the weights back to the starting position.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 3 sets of 10-12 reps\n"
+                          "Intermediate: 4 sets of 8-10 reps\n"
+                          "Advanced: 5 sets of 6-8 reps\n";
     } else if (exerciseName.compare("Swimming", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Swimming\n"
                           "Description: Full-body workout that is gentle on joints.\n"
@@ -1028,18 +1009,18 @@ void MainWindow::on_Endoshowexercise_clicked()
         imagePath = ":/images/swimming.jpg";
 
     } else if (exerciseName.compare("Elliptical Trainer", Qt::CaseInsensitive) == 0) {
-            exerciseDetails = "Exercise: Elliptical Trainer\n"
-                              "Description: Effective for cardiovascular health and weight loss.\n\n"
-                              "Procedure:\n"
-                              "Stand on the machine and hold the handles.\n"
-                              "Begin pedaling at a steady pace.\n"
-                              "Increase resistance and intensity gradually.\n\n"
-                              "Repetitions:\n"
-                              "Beginner: 20-30 minutes, 3 times a week\n"
-                              "Intermediate: 30-40 minutes, 4 times a week\n"
-                              "Advanced: 40-60 minutes, 5 times a week\n";
-            imagePath = ":/images/elliptricaltrainer.jpg";
-        }
+        exerciseDetails = "Exercise: Elliptical Trainer\n"
+                          "Description: Effective for cardiovascular health and weight loss.\n\n"
+                          "Procedure:\n"
+                          "Stand on the machine and hold the handles.\n"
+                          "Begin pedaling at a steady pace.\n"
+                          "Increase resistance and intensity gradually.\n\n"
+                          "Repetitions:\n"
+                          "Beginner: 20-30 minutes, 3 times a week\n"
+                          "Intermediate: 30-40 minutes, 4 times a week\n"
+                          "Advanced: 40-60 minutes, 5 times a week\n";
+        imagePath = ":/images/elliptricaltrainer.jpg";
+    }
     else if (exerciseName.compare("Rowing Machine", Qt::CaseInsensitive) == 0) {
         exerciseDetails = "Exercise: Rowing Machine\n"
                           "Description: Full-body workout that also builds endurance.\n\n"
@@ -1053,8 +1034,8 @@ void MainWindow::on_Endoshowexercise_clicked()
                           "Intermediate: 30-40 minutes, 4 times a week\n"
                           "Advanced: 40-60 minutes, 5 times a week\n";
         imagePath = ":/images/Rowingmachine.jpg";
-        }
-     else {
+    }
+    else {
         exerciseDetails = "No exercise found with the given name.";
         imagePath = ":/images/not_found.jpg";  // Replace with a 'not found' image path
     }
